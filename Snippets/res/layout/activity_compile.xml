@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f4" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="431dp" >
+
+        
+        <EditText
+            android:id="@+id/edittextSource"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkedTextView2"
+            android:background="#e5e5e5"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:singleLine="false" >
+           
+        </EditText>
+        
+        <EditText
+            android:id="@+id/edittextInput"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/checkedTextView3"
+            android:layout_below="@+id/checkedTextView3"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/btnExecute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittextInput"
+            android:background="#354B5E"
+            android:textColor="#FFCC00"
+            android:textStyle="bold"
+            android:text="Execute" />
+
+        <TextView
+            android:id="@+id/checkedTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="@+id/textView1"
+            android:layout_below="@+id/spinnerLanguage"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Source Code" />
+
+        <TextView
+            android:id="@+id/checkedTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_below="@+id/edittextSource"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Standard Input (stdin)" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnExecute"
+            android:layout_alignBottom="@+id/btnExecute"
+            android:layout_toRightOf="@+id/checkedTextView2"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Compiler Result: " />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#FFCC00" />
+
+        <TextView
+            android:id="@+id/textOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnExecute"
+            android:layout_marginTop="56dp"
+            android:textColor="#354B5E"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnExecute"
+            android:layout_marginTop="20dp"
+            android:text="Console output"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Choose language"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

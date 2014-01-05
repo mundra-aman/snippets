@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Snippets</string>
+    <string name="action_settings">Settings</string>
+    <string name="Feedback">Feedback</string>
+    <string name="Contact">Contact us</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="app_id">645588418826166</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Java</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>C# - .net</item>
+        <item>Php</item>
+        <item>Python</item>
+        <item>Compile own code</item>
+        <item>Compare Algos</item>
+        <item>My codes</item>
+        <item>Git Repos</item>
+        <item>Compile Engine</item>
+        <item>Lang tuts+</item>
+        <item>Snip Feeds</item>
+        <item>Accounts</item>
+        <item>Settings</item>
+    </string-array>
+
+    <!-- Nav Drawer Menu tags -->
+    <string-array name="nav_drawer_tags">
+        <item></item>
+        <item>WORE - Write Once, Run Everywhere</item>
+        <item>CTH - Close To Hardware</item>
+        <item>C with Classes (++ is increment op.)</item>
+        <item>CLI - Common Language Infrastructure</item>
+        <item>Php - Hypertext Preprocessor</item>
+        <item>DRY - Don\'t Repeat Yourself</item>
+        <item></item>
+        <item>Time-Space Trade Off</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Facebook &amp; Github</item>
+        <item></item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_java</item>
+        <item>@drawable/ic_c</item>
+        <item>@drawable/ic_cpp</item>
+        <item>@drawable/ic_csharp</item>
+        <item>@drawable/ic_php</item>
+        <item>@drawable/ic_python</item>
+        <item>@drawable/ic_compileowncode</item>
+        <item>@drawable/ic_comparealgos</item>
+        <item>@drawable/ic_mycodes</item>
+        <item>@drawable/ic_git</item>
+        <item>@drawable/ic_compilengine</item>
+        <item>@drawable/ic_langtut</item>
+        <item>@drawable/ic_snipfeeds</item>
+        <item>@drawable/ic_accounts</item>
+        <item>@drawable/ic_settings</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_testact">Testact</string>
+    <string name="title_activity_test">Test</string>
+
+</resources>
