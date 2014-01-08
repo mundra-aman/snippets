@@ -18,7 +18,6 @@ import org.xmlpull.v1.XmlPullParserException;
 
 
 import android.content.Context;
-import android.widget.Toast;
 
 public class Ideone{
 
