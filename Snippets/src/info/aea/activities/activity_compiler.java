@@ -1,11 +1,11 @@
 package info.aea.activities;
 
 
+import info.aea.compiler.activities.Ideone;
+import info.aea.compiler.activities.RunThread;
+import info.aea.compiler.adapters.AdapterLanguages;
 import info.aea.database.SnippetsDB_Helper;
 import info.aea.snippets.R;
-import info.ideone.activity.Ideone;
-import info.ideone.activity.RunThread;
-import info.ideone.adapters.AdapterLanguages;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;

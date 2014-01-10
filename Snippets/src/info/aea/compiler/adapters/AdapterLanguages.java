@@ -1,6 +1,6 @@
-package info.ideone.adapters;
+package info.aea.compiler.adapters;
 
-import info.ideone.activity.Ideone;
+import info.aea.compiler.activities.Ideone;
 import android.content.Context;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;

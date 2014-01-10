@@ -1,4 +1,4 @@
-package info.ideone.activity;
+package info.aea.compiler.activities;
 public class IdeoneSubmissionDetails {
     public Integer langId;
     public String langName;

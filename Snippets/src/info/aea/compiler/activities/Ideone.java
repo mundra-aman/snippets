@@ -1,7 +1,7 @@
-package info.ideone.activity;
+package info.aea.compiler.activities;
 
-import info.ideone.exceptions.AuthException;
-import info.ideone.exceptions.DataException;
+import info.aea.compiler.exceptions.AuthException;
+import info.aea.compiler.exceptions.DataException;
 
 import java.io.IOException;
 import java.util.ArrayList;

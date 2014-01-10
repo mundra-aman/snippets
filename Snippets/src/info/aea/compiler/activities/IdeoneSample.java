@@ -1,7 +1,7 @@
-package info.ideone.activity;
+package info.aea.compiler.activities;
 
+import info.aea.compiler.adapters.AdapterLanguages;
 import info.aea.snippets.R;
-import info.ideone.adapters.AdapterLanguages;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
