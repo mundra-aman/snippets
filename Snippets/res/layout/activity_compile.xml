@@ -13,7 +13,7 @@
         <EditText
             android:id="@+id/edittextSource"
             android:layout_width="330dp"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_below="@+id/checkedTextView2"
             android:background="#e5e5e5"
             android:ems="10"
