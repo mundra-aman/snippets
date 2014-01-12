@@ -13,7 +13,6 @@ import info.aea.drawer.Fragment_GitCodes;
 import info.aea.drawer.Fragment_Java;
 import info.aea.drawer.Fragment_LangTuts;
 import info.aea.drawer.Fragment_MyCodes;
-import info.aea.drawer.Fragment_Php;
 import info.aea.drawer.Fragment_Python;
 import info.aea.drawer.Fragment_Settings;
 import info.aea.drawer.Fragment_home;

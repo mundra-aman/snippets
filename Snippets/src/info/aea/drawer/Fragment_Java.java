@@ -127,8 +127,8 @@ public class Fragment_Java extends Fragment {
                     }
                 });
  
-                // Setting Netural "Cancel" Button
-                adb.setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                // Setting Netural "share" Button
+                adb.setPositiveButton("share", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                     // User pressed Cancel button. Write Logic Here
                     Toast.makeText(getActivity(), "You clicked on Cancel",
