@@ -95,27 +95,31 @@ public class LaunchActivity_NavDrawer extends Activity {
 
 		navDrawerItems = new ArrayList<NavDrawerItem>();
 
+		
+		// counter sample
+		// navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuTags[0], navMenuIcons.getResourceId(0, -1), true, "22" ));
 		// adding nav drawer items to array
 		// Home
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuTags[0], navMenuIcons.getResourceId(0, -1), true, "22" ));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuTags[0], navMenuIcons.getResourceId(0, -1)));
 		// Find People
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuTags[1], navMenuIcons.getResourceId(1, -1)));
 		// Photos
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuTags[2], navMenuIcons.getResourceId(2, -1)));
 		// Communities, Will add a counter here
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuTags[3],  navMenuIcons.getResourceId(3, -1), true, "22"));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuTags[3],  navMenuIcons.getResourceId(3, -1)));
 		// Pages
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuTags[4], navMenuIcons.getResourceId(4, -1)));
-		// What's hot, We  will add a counter here
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuTags[5], navMenuIcons.getResourceId(5, -1), true, "50+"));
 		// Find People
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuTags[6], navMenuIcons.getResourceId(6, -1)));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuTags[5], navMenuIcons.getResourceId(5, -1)));
 		// Communities, Will add a counter here
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuTags[7], navMenuIcons.getResourceId(7, -1), true, "22"));
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuTags[6], navMenuIcons.getResourceId(6, -1)));
 				
 		// empty list
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuTags[7], navMenuIcons.getResourceId(7, -1)));
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], navMenuTags[8], navMenuIcons.getResourceId(8, -1)));
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[9], navMenuTags[9], navMenuIcons.getResourceId(9, -1)));
+		
+		// Pages
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[10], navMenuTags[10], navMenuIcons.getResourceId(10, -1)));
 		
 		// Pages
@@ -124,12 +128,9 @@ public class LaunchActivity_NavDrawer extends Activity {
 		// Pages
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[12], navMenuTags[12], navMenuIcons.getResourceId(12, -1)));
 		
-		// Pages
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[13], navMenuTags[13], navMenuIcons.getResourceId(13, -1)));
 		
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[14], navMenuTags[14], navMenuIcons.getResourceId(14, -1)));
-		
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[15], navMenuTags[15], navMenuIcons.getResourceId(15, -1)));
 		
 				
 				
@@ -277,50 +278,44 @@ public class LaunchActivity_NavDrawer extends Activity {
 			fragment = new Fragment_CSharp();
 			break;
 		case 5:
-			fragment = new Fragment_Php();
-			break;
-		case 6:
 			fragment = new Fragment_Python();
 			break;
-		case 7:
+		case 6:
 			fragment = new Fragment_CompileOwnCode();
 			break;
 			
-		case 8:
+		case 7:
 			fragment = new Fragment_CompareAlgos();
 			break;
 			
-		case 9:
+		case 8:
 			fragment = new Fragment_MyCodes();
 			break;
 			
-		case 10:
+		case 9:
 			fragment = new Fragment_GitCodes();
 			break;
 		
-		case 11:
+		case 10:
 			fragment = new Fragment_CompileEngine();
 			break;
-		case 12:
+		case 11:
 			fragment = new Fragment_LangTuts();
 			break;
-		case 13:
+		case 12:
 			
 			Intent i = new Intent(getApplicationContext(), AndroidRSSReaderApplicationActivity.class);
 			startActivity(i);
 			//fragment = new Fragment_SnipFeeds();
 			break;
 			
-		case 14:
+		case 13:
 			fragment = new Fragment_Accounts();
 			break;
 			
-		case 15:
+		case 14:
 			fragment = new Fragment_Settings();
 			break;
-			
-			
-
 		default:
 			break;
 		}

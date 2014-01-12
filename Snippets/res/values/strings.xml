@@ -17,7 +17,6 @@
         <item>C</item>
         <item>C++</item>
         <item>C# - .net</item>
-        <item>Php</item>
         <item>Python</item>
         <item>Compile own code</item>
         <item>Compare Algos</item>
@@ -37,7 +36,6 @@
         <item>CTH - Close To Hardware</item>
         <item>C with Classes (++ is increment op.)</item>
         <item>CLI - Common Language Infrastructure</item>
-        <item>Php - Hypertext Preprocessor</item>
         <item>DRY - Don\'t Repeat Yourself</item>
         <item></item>
         <item>Time-Space Trade Off</item>
@@ -58,7 +56,6 @@
         <item>@drawable/ic_c</item>
         <item>@drawable/ic_cpp</item>
         <item>@drawable/ic_csharp</item>
-        <item>@drawable/ic_php</item>
         <item>@drawable/ic_python</item>
         <item>@drawable/ic_compileowncode</item>
         <item>@drawable/ic_comparealgos</item>

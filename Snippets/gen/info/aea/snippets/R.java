@@ -219,7 +219,7 @@ containing a value of this type.
         public static final int com_facebook_list_section_header_background=0x7f02000f;
         public static final int com_facebook_loginbutton_silver=0x7f020010;
         public static final int com_facebook_logo=0x7f020011;
-        public static final int com_facebook_picker_default_separator_color=0x7f020048;
+        public static final int com_facebook_picker_default_separator_color=0x7f020047;
         public static final int com_facebook_picker_item_background=0x7f020012;
         public static final int com_facebook_picker_list_focused=0x7f020013;
         public static final int com_facebook_picker_list_longpressed=0x7f020014;
@@ -258,22 +258,21 @@ containing a value of this type.
         public static final int ic_pages=0x7f020035;
         public static final int ic_people=0x7f020036;
         public static final int ic_photos=0x7f020037;
-        public static final int ic_php=0x7f020038;
-        public static final int ic_python=0x7f020039;
-        public static final int ic_settings=0x7f02003a;
-        public static final int ic_snipfeeds=0x7f02003b;
-        public static final int ic_whats_hot=0x7f02003c;
-        public static final int img=0x7f02003d;
-        public static final int javaicon=0x7f02003e;
-        public static final int list_bg=0x7f02003f;
-        public static final int list_bg_hover=0x7f020040;
-        public static final int list_item_bg_normal=0x7f020041;
-        public static final int list_item_bg_pressed=0x7f020042;
-        public static final int list_selector=0x7f020043;
-        public static final int list_selectorrss=0x7f020044;
-        public static final int logo=0x7f020045;
-        public static final int plus=0x7f020046;
-        public static final int wwe_logo=0x7f020047;
+        public static final int ic_python=0x7f020038;
+        public static final int ic_settings=0x7f020039;
+        public static final int ic_snipfeeds=0x7f02003a;
+        public static final int ic_whats_hot=0x7f02003b;
+        public static final int img=0x7f02003c;
+        public static final int javaicon=0x7f02003d;
+        public static final int list_bg=0x7f02003e;
+        public static final int list_bg_hover=0x7f02003f;
+        public static final int list_item_bg_normal=0x7f020040;
+        public static final int list_item_bg_pressed=0x7f020041;
+        public static final int list_selector=0x7f020042;
+        public static final int list_selectorrss=0x7f020043;
+        public static final int logo=0x7f020044;
+        public static final int plus=0x7f020045;
+        public static final int wwe_logo=0x7f020046;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f050003;
