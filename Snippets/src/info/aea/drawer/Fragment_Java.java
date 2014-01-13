@@ -131,8 +131,6 @@ public class Fragment_Java extends Fragment {
                 adb.setPositiveButton("share", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                     // User pressed Cancel button. Write Logic Here
-                    Toast.makeText(getActivity(), "You clicked on Cancel",
-                                        Toast.LENGTH_SHORT).show();
                     Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                     sharingIntent.setType("text/plain");
                     String shareBody = "Here is the share content body";
