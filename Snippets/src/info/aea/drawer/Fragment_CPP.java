@@ -49,7 +49,7 @@ public class Fragment_CPP extends Fragment {
         logindb = new SnippetsDB_Helper(getActivity()); 
         
        
-        String lang="cpp";
+        String lang="c++";
 		List<SourceCode_Table> ls = logindb.getall(lang);
 		
 		codeid    = new String[ls.size()];
