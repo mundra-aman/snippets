@@ -144,20 +144,10 @@ public class Fragment_Java extends Fragment {
                     }
                 });
 				
-				
 						adb.show();
-
-
 	}
 		});
-
-
-        return view;  
-	
-        
+        return view;    
     
-    }
-	
-	
-	
+    }	
 }
