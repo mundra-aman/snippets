@@ -21,6 +21,10 @@ import android.content.Context;
 
 public class Ideone{
 
+	// time-space tradeoff
+	public static float time;
+	public static int memory;
+	
 	private static final String URL = "http://ideone.com/api/1/service";
 	protected HashMap<Integer, String> langs = new HashMap<Integer, String>();
 	protected ArrayList<String> langsList = new ArrayList<String>();
@@ -296,10 +300,26 @@ public class Ideone{
 		    ret.langVersion = (String) data.get("langVersion");
 		    ret.date = (String) data.get("date");
 		    //ret.time = (Float) data.get("time");  // no support for Float on ME kSoap
+		    
+		    // time - space trade off
+		    System.out.println("time-space tradeoff 1");
+		  // time tradeoff
 		    ret.time = Float.valueOf( ((SoapPrimitive) data.get("time")).toString() );
+		    Float time = ret.time;
+		    System.out.println("time ======" + time);
+		    
+		 // space tradeoff  
+		    ret.memory = (Integer) data.get("memory");
+		    int memory = ret.memory;
+		    System.out.println("memory ======" + memory);
+		  
+		    
+		    
+		    
 		    ret.result = (Integer) data.get("result");
 		    ret.status = (Integer) data.get("status");
-		    ret.memory = (Integer) data.get("memory");
+		    
+		    
 		    ret.signal = (Integer) data.get("signal");
 		    ret.isPublic = (Boolean) data.get("public");
 		    
@@ -443,4 +463,6 @@ public class Ideone{
 		}
     	return 1;
     }
+    
+
 }

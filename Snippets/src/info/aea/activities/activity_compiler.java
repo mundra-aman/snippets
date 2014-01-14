@@ -85,6 +85,9 @@ ProgressDialog progressDialog;
 	        	   runThread.setInput(edittextInput.getText().toString());
 	        	   runThread.setLang(ideone.getLanguageIdByName(spinnerLanguage.getSelectedItem().toString()));
 	        	   runThread.start();
+	        	   
+
+	           	
         	   } catch(Exception e){
         		   AlertDialog.Builder errb = new AlertDialog.Builder(activity);
         		   errb.setMessage("Error: " + e.toString());
@@ -94,10 +97,12 @@ ProgressDialog progressDialog;
 			}
 		});
     }
-    
+	
+	
     final Handler handler = new Handler() {
         public void handleMessage(Message msg) {
         	try{
+        		        		
         		String command = msg.getData().getString("command");
         		String text = msg.getData().getString("text");
         		
@@ -116,6 +121,10 @@ ProgressDialog progressDialog;
 	            
 	            } else if( command.equals("result") ){
 	            	textResult.setText(text);
+		        	   System.out.println("time-space tradeoff 2");
+			           	System.out.println("compile time=======" + Ideone.time);
+			           	System.out.println("compile memory========" + Ideone.memory);
+
 	            	
 	            	//Toast.makeText(getApplicationContext(), "Authorization Error", Toast.LENGTH_LONG).show();	
 	            } else if( command.equals("error")){
@@ -125,6 +134,13 @@ ProgressDialog progressDialog;
         	} catch( Exception e ){
         		//int a = 0;
         	}
+        	
+        	
+	
+    
         }
+    
     };
+    
+    
 }
