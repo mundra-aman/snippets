@@ -65,15 +65,22 @@ public class SnippetsDB_Helper extends SQLiteAssetHelper {
 				SQLiteDatabase db = getWritableDatabase();
 				Cursor cursor = db.rawQuery(selectQuery, null);
 
-				/*
-				// looping through all rows and adding to Vector
 				if (cursor.moveToFirst()) {
-					str = cursor.getString(0) + "\n"+ cursor.getString(1) +"\n"+ 
-							cursor.getString(2) +"\n\n Source Code: \n"+ cursor.getString(3) +"\n\n"+
-							cursor.getString(4) ;
+					str = cursor.getString(3);
 					System.out.println("str");
 				}
-				*/
+				
+				return str;
+			}
+			
+			
+			
+			//get a single row on condition - for algorithms
+			public String getrow_algo(String id) {
+				String str="";
+				String selectQuery = "SELECT  * FROM Algorithms where algoid='" +id+ "'" ;    // Select All Query
+				SQLiteDatabase db = getWritableDatabase();
+				Cursor cursor = db.rawQuery(selectQuery, null);
 				
 				if (cursor.moveToFirst()) {
 					str = cursor.getString(3);

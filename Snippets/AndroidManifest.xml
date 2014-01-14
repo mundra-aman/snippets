@@ -51,6 +51,11 @@
             android:name="info.aea.activities.activity_compiler"
             android:label="@string/title_activity_testact" >
         </activity>
+        
+        <activity
+            android:name="info.aea.activities.activity_compare"
+            android:label="@string/title_activity_testact" >
+        </activity>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
