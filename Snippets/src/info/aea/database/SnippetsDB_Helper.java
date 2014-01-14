@@ -84,6 +84,29 @@ public class SnippetsDB_Helper extends SQLiteAssetHelper {
 			}
 
 			
+			
+			// get all Algorithms query
+			public List<Algorithms_Table> getallAlgos() {
+				List<Algorithms_Table> Algolist = new ArrayList<Algorithms_Table>();
+				String selectQuery = "SELECT * FROM Algorithms";    // Select All Query
+				SQLiteDatabase db = getWritableDatabase();
+				Cursor cursor = db.rawQuery(selectQuery, null);
+
+				// looping through all rows and adding to Vector
+				if (cursor.moveToFirst()) {
+					do {
+						Algorithms_Table a = new Algorithms_Table();
+
+						a.setAlgoID(cursor.getString(0));
+						a.setAlgoTitle(cursor.getString(1));
+						
+						Algolist.add(a);
+					} while (cursor.moveToNext());
+				}
+				return Algolist;
+			}
+			
+			
 
 			// query to save code with a savebit
 			public void  update_save2(String codeid, String bit){
