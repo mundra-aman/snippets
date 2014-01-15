@@ -120,12 +120,7 @@ ProgressDialog progressDialog;
 	            	textOutput.setText(text);
 	            
 	            } else if( command.equals("result") ){
-	            	textResult.setText(text);
-		        	   System.out.println("time-space tradeoff 2");
-			           	System.out.println("compile time=======" + Ideone.time);
-			           	System.out.println("compile memory========" + Ideone.memory);
-
-	            	
+	            	textResult.setText(text);           	
 	            	//Toast.makeText(getApplicationContext(), "Authorization Error", Toast.LENGTH_LONG).show();	
 	            } else if( command.equals("error")){
 	            	textOutput.setText(text);
@@ -135,7 +130,10 @@ ProgressDialog progressDialog;
         		//int a = 0;
         	}
         	
-        	
+        	System.out.println("time-space tradeoff 2");
+            System.out.println("compile time=======" + Ideone.time);
+	        System.out.println("compile memory========" + Ideone.memory);
+
 	
     
         }

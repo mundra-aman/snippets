@@ -22,8 +22,9 @@ import android.content.Context;
 public class Ideone{
 
 	// time-space tradeoff
-	public static float time;
-	public static int memory;
+		public static float time;
+		public static int memory;
+		
 	
 	private static final String URL = "http://ideone.com/api/1/service";
 	protected HashMap<Integer, String> langs = new HashMap<Integer, String>();
