@@ -64,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:orientation="horizontal" >            
-            
+          
          <EditText
             android:id="@+id/edittextSource"
             android:layout_width="172dp"
@@ -141,7 +141,7 @@
                 android:singleLine="false" />
 
             <EditText
-                android:id="@+id/edittextInput"
+                android:id="@+id/edittextInput2"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -164,8 +164,15 @@
             android:textColor="#FFCC00"
             android:textStyle="bold" />
 
+        <LinearLayout 
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            
+            
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/comresult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -174,17 +181,54 @@
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/comresult2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:text="Compiler Result 2"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+        </LinearLayout>
 
+        <LinearLayout 
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+        
         <TextView
             android:id="@+id/textResult"
-            android:layout_width="match_parent"
+            android:layout_width="137dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
             android:textColor="#FF0000"
             android:textSize="15sp"
             android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/textResult2"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FF0000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        
+        </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+           
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
@@ -195,17 +239,181 @@
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
-
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:text="Console output 2"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+	
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+            
         <TextView
             android:id="@+id/textOutput"
-            android:layout_width="match_parent"
+            android:layout_width="154dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
-            android:layout_weight="0.09"
+            android:layout_marginTop="5dp"
             android:textColor="#354B5E"
             android:textSize="15sp"
             android:textStyle="normal" />
+        
+        <TextView
+            android:id="@+id/textOutput2"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#354B5E"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+ 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Time taken" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="Time taken 2"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/gettime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="gettime" />
+        
+        <TextView
+            android:id="@+id/gettime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="130dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="gettime2" />
+        
+        </LinearLayout>
+
+        <LinearLayout 
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Memory crunched" />
+        
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Memory crunched" />
+
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/getmem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="memory" />
+
+        
+        <TextView
+            android:id="@+id/getmem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="130dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="memory" />
+
+     	</LinearLayout>
+     	
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="130dp"
+            android:text="Conclusion"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Algorithm 1 is more efficient"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
     </LinearLayout>
 
 </ScrollView>

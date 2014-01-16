@@ -306,12 +306,12 @@ public class Ideone{
 		    System.out.println("time-space tradeoff 1");
 		  // time tradeoff
 		    ret.time = Float.valueOf( ((SoapPrimitive) data.get("time")).toString() );
-		    Float time = ret.time;
+		    time = ret.time;
 		    System.out.println("time ======" + time);
 		    
 		 // space tradeoff  
 		    ret.memory = (Integer) data.get("memory");
-		    int memory = ret.memory;
+		    memory = ret.memory;
 		    System.out.println("memory ======" + memory);
 		  
 		    

@@ -2,6 +2,7 @@ package info.aea.database;
 
 import info.aea.snippets.R;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +37,12 @@ public class SourceCode_FragmentAdapter extends ArrayAdapter<String> {
 	public View getView(int position, View convertView, ViewGroup parent) {
 		LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View rowView = inflater.inflate(R.layout.list_items, parent, false);
+		
+		if (position % 2 == 1) {
+		    rowView.setBackgroundColor(Color.WHITE);  
+		} else {
+		    rowView.setBackgroundColor(Color.LTGRAY);  
+		}
 		
 		TextView textView = (TextView) rowView.findViewById(R.id.tvPat);
 		

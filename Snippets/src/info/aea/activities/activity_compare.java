@@ -24,8 +24,10 @@ public class activity_compare extends Activity {
 	
 ProgressDialog progressDialog;
 	
-	TextView textOutput;
-	TextView textResult;
+	TextView textOutput, textOutput2;
+	TextView textResult, textResult2;
+	TextView texttime, texttime2;
+	TextView textmemory, textmemory2;
 	
 	SQLiteDatabase db;
 	SnippetsDB_Helper logindb;
@@ -66,10 +68,18 @@ ProgressDialog progressDialog;
         
 		final Spinner spinnerLanguage = (Spinner)this.findViewById(R.id.spinnerLanguage);
 		final EditText edittextSource = (EditText)this.findViewById(R.id.edittextSource);
+		final EditText edittextSource2 = (EditText)this.findViewById(R.id.edittextSource2);
 		final EditText edittextInput = (EditText)this.findViewById(R.id.edittextInput);
+		final EditText edittextInput2 = (EditText)this.findViewById(R.id.edittextInput2);
 		final Activity activity = this;
 		textOutput = (TextView)this.findViewById(R.id.textOutput);
+		textOutput2 = (TextView)this.findViewById(R.id.textOutput2);
 		textResult = (TextView)this.findViewById(R.id.textResult);
+		textResult2 = (TextView)this.findViewById(R.id.textResult2);
+		texttime = (TextView)this.findViewById(R.id.gettime);
+		texttime2 = (TextView)this.findViewById(R.id.gettime2);
+		textmemory = (TextView)this.findViewById(R.id.getmem);
+		textmemory2 = (TextView)this.findViewById(R.id.getmem2);
 		
         // languages
         spinnerLanguage.setAdapter(new AdapterLanguages(this, 1));
@@ -99,6 +109,24 @@ ProgressDialog progressDialog;
         		   AlertDialog ad = errb.create();
         		   ad.show();
         	   }
+				
+				
+				try{
+					RunThread runThread = new RunThread(activity, handler2);
+		        	   String _s = edittextSource2.getText().toString();
+		        	   runThread.setSource(_s);
+		        	   runThread.setInput(edittextInput2.getText().toString());
+		        	   runThread.setLang(ideone.getLanguageIdByName(spinnerLanguage.getSelectedItem().toString()));
+		        	   runThread.start();
+		        	   
+				}
+				catch(Exception e){
+					AlertDialog.Builder errb = new AlertDialog.Builder(activity);
+	        		   errb.setMessage("Error: " + e.toString());
+	        		   AlertDialog ad = errb.create();
+	        		   ad.show();
+				}
+				
 			}
 		});
     }
@@ -108,6 +136,8 @@ ProgressDialog progressDialog;
         public void handleMessage(Message msg) {
         	try{
         		        		
+        		//Toast.makeText(getApplicationContext(), "Compiling Algorithm 1", Toast.LENGTH_SHORT).show();
+        		
         		String command = msg.getData().getString("command");
         		String text = msg.getData().getString("text");
         		
@@ -123,14 +153,20 @@ ProgressDialog progressDialog;
 	            	
 	            } else if( command.equals("echo2") ){
 	            	textOutput.setText(text);
+	            	//textOutput2.setText(text);
 	            
 	            } else if( command.equals("result") ){
 	            	textResult.setText(text);
-		        	   System.out.println("time-space tradeoff 2");
-			           	System.out.println("compile time=======" + Ideone.time);
+	            	//textResult2.setText(text);
+		        	   	
+	            		System.out.println("time-space tradeoff 2");
+	            		System.out.println("compile time=======" + Ideone.time);
+			           	texttime.setText(String.valueOf(Ideone.time + "sec"));
+			          // 	texttime2.setText(String.valueOf(Ideone.time));
 			           	System.out.println("compile memory========" + Ideone.memory);
-
-	            	
+			           	textmemory.setText(String.valueOf(Ideone.memory + " bytes"));
+			           	//textmemory2.setText(String.valueOf(Ideone.memory));
+			        
 	            	//Toast.makeText(getApplicationContext(), "Authorization Error", Toast.LENGTH_LONG).show();	
 	            } else if( command.equals("error")){
 	            	textOutput.setText(text);
@@ -141,7 +177,57 @@ ProgressDialog progressDialog;
         	}
         	
         	
-	
+    
+        }
+    
+    };
+    
+    
+    final Handler handler2 = new Handler() {
+        public void handleMessage(Message msg) {
+        	try{
+        		
+        		//Toast.makeText(getApplicationContext(), "Compiling Algorithm 2", Toast.LENGTH_SHORT).show();
+        		
+        		String command = msg.getData().getString("command");
+        		String text = msg.getData().getString("text");
+        		
+	            if( command.equals("open") ){
+	            	progressDialog.show();
+	            	textResult2.setText("");
+	            	
+	            } else if( command.equals("close") ){
+	            	progressDialog.hide();
+	            	
+	            } else if( command.equals("echo") ){
+	            	progressDialog.setMessage(text);
+	            	
+	            } else if( command.equals("echo2") ){
+	            	//textOutput.setText(text);
+	            	textOutput2.setText(text);
+	            
+	            } else if( command.equals("result") ){
+	            	//textResult.setText(text);
+	            	textResult2.setText(text);
+		        	   	
+	            		System.out.println("time-space tradeoff 2");
+	            		System.out.println("compile time=======" + Ideone.time);
+			          // 	texttime.setText(String.valueOf(Ideone.time));
+			           	texttime2.setText(String.valueOf(Ideone.time + "sec"));
+			           	System.out.println("compile memory========" + Ideone.memory);
+			          // 	textmemory.setText(String.valueOf(Ideone.memory));
+			           	textmemory2.setText(String.valueOf(Ideone.memory + "bytes"));
+			        
+	            	//Toast.makeText(getApplicationContext(), "Authorization Error", Toast.LENGTH_LONG).show();	
+	            } else if( command.equals("error")){
+	            	textOutput.setText(text);
+	            	progressDialog.hide();
+	            }
+        	} catch( Exception e ){
+        		//int a = 0;
+        	}
+        	
+        	
     
         }
     

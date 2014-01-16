@@ -80,11 +80,14 @@ public class Fragment_C extends Fragment {
 			
 		}
 
+		
         listview.setAdapter(new SourceCode_FragmentAdapter(getActivity(), codeid, codelang, codetitle, codesource, codeoutput));  
               
         listview.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> arg0, View arg1, final int position,
 					long arg3) {
+				
+				
 				//Create bundle to reference values in next class
                 final Bundle bundle = new Bundle();
 				bundle.putString("codeid", codeid[position]);

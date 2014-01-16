@@ -7,92 +7,79 @@
 
 <LinearLayout
     android:id="@+id/LinearLayout1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+        
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Algorithm 1" />
+        android:textStyle="bold"
+        android:text="Algorithm 1:  " />
+    
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="None" />
+    
+    </LinearLayout>
 
     <ListView
         android:id="@+id/algolist1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="190dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp" >
      
     </ListView>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Algorithm selected"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/title1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="None"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time Space Algo 1" />
-
+    
+	<LinearLayout 
+	    android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Algorithm 2" />
-
+        android:textStyle="bold"
+        android:text="Algorithm 2:  " />
+    
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="None" />
+    
+    </LinearLayout>
+    
     <ListView
         android:id="@+id/algolist2"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="190dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp" >
         
     </ListView>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Algorithm selected"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/title2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="None"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Time Space Algo 2" />
+    
 
     <Button
         android:id="@+id/compare"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Compare" />
-
-    <TextView
-        android:id="@+id/compresult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Comparison Result" />
+        android:layout_marginTop="20dp"
+        android:text="Switch to Algorithm Source Code" />
 </LinearLayout>
 
 </ScrollView>
