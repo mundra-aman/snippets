@@ -96,7 +96,8 @@ public class Fragment_Java extends Fragment {
 
 				// LayoutInflater inflater= getActivity().getLayoutInflater();
 			        //this is what I did to add the layout to the alert dialog
-			 	 adb.setTitle("Code Commands");
+				 
+				 adb.setTitle("Code Commands");
     			 adb.setMessage(codetitle[position]);
     			 adb.setIcon(R.drawable.cmd);
     			 
@@ -133,8 +134,8 @@ public class Fragment_Java extends Fragment {
                     // User pressed Cancel button. Write Logic Here
                     Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                     sharingIntent.setType("text/plain");
-                    String shareBody = "Here is the share content body";
-                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+                    String shareBody = codesource[position];
+                    sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Heading");
                     sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
                     startActivity(Intent.createChooser(sharingIntent, "Share via"));
                     

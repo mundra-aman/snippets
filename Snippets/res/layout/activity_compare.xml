@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#f4f4f4" >
+    android:background="#98B08D" >
     
     <LinearLayout
         android:id="@+id/LinearLayout1"
@@ -177,7 +177,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
-            android:text="Compiler Result "
+            android:text="Compiler Result 1 "
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -187,7 +187,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="60dp"
             android:text="Compiler Result 2"
             android:textColor="#000000"
             android:textSize="18sp"
@@ -215,7 +215,7 @@
             android:id="@+id/textResult2"
             android:layout_width="162dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="5dp"
             android:textColor="#FF0000"
             android:textSize="15sp"
@@ -235,7 +235,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
-            android:text="Console output"
+            android:text="Console output 1"
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -245,7 +245,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="70dp"
             android:text="Console output 2"
             android:textColor="#000000"
             android:textSize="18sp"
@@ -273,7 +273,7 @@
             android:id="@+id/textOutput2"
             android:layout_width="157dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="50dp"
             android:layout_marginTop="5dp"
             android:textColor="#354B5E"
             android:textSize="15sp"
@@ -296,7 +296,7 @@
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="Time taken" />
+            android:text="Time taken 1" />
 
         <TextView
             android:id="@+id/textView4"
@@ -324,18 +324,16 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:textColor="#000000"
-            android:textSize="18sp"
-            android:text="gettime" />
+            android:textSize="18sp" />
         
         <TextView
             android:id="@+id/gettime2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="130dp"
+            android:layout_marginLeft="150dp"
             android:textColor="#000000"
-            android:textSize="18sp"
-            android:text="gettime2" />
+            android:textSize="18sp" />
         
         </LinearLayout>
 
@@ -354,7 +352,7 @@
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="Memory crunched" />
+            android:text="Memory crunched 1" />
         
         <TextView
             android:id="@+id/textView6"
@@ -365,7 +363,7 @@
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="Memory crunched" />
+            android:text="Memory crunched 2" />
 
         </LinearLayout>
         
@@ -381,8 +379,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:textColor="#000000"
-            android:textSize="18sp"
-            android:text="memory" />
+            android:textSize="18sp" />
 
         
         <TextView
@@ -392,19 +389,20 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="130dp"
             android:textColor="#000000"
-            android:textSize="18sp"
-            android:text="memory" />
+            android:textSize="18sp" />
 
      	</LinearLayout>
      	
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="130dp"
-            android:text="Conclusion"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        
         
         <TextView
             android:id="@+id/textView2"

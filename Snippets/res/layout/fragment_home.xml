@@ -1,33 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f4f4f4" >
-    
-    <TextView
-        android:id="@+id/txtLabel"
-         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textColor="#ffffff"
-        android:textSize="16dp"
-        android:text="Home View"/>
-    
-    <ImageView android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtLabel"
-        android:src="@drawable/ic_home"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+    android:orientation="vertical"
+    android:weightSum="3" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="20dp"
-        android:text="Tour" />
+<TableLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:layout_weight="2.8"
+    android:weightSum="8" >
 
-</RelativeLayout>
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#C7D147" >
+	
+        <TextView 
+            android:id="@+id/hacker_space"
+            android:gravity="center"
+            android:layout_span="3"
+      	    android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+            android:textColor="#ffffffff"
+            android:text="Java"
+            android:clickable="true"
+            android:textSize="20sp"/>       
+       
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="#FF6820" >
+		
+		<TextView 
+            android:gravity="center"
+            android:layout_span="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#202D44"
+            android:text="c++"
+            android:textSize="20sp" /> 
+       
+        
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:background="#0C273D">
+
+       <TextView 
+            android:gravity="center"
+            android:layout_span="3"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:textColor="#ffffffff"
+            android:text="C"
+            android:textSize="20sp"/> 
+        
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="2.5" 
+        android:background="#D7DADB" >
+<TextView 
+            android:gravity="center"
+            android:layout_span="3"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:textColor="#202D44"
+            android:text="C# .net"
+            android:textSize="20sp"/> 
+       
+    </TableRow>
+<TableRow
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:background="#FFE11A">
+
+       <TextView 
+            android:gravity="center"
+            android:layout_span="3"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:textColor="#ffffffff"
+            android:text="Python"
+            android:textSize="20sp"/> 
+        
+    </TableRow>
+</TableLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.30"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+
+        <TextView
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+             android:textColor="#ffffffff"
+            android:gravity="center"
+             android:background="#8E001C"
+              android:textSize="20sp"
+            android:text="Need Help">
+        </TextView>
+         
+         <TextView
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+             android:textColor="#ffffffff"
+            android:gravity="center"
+             android:background="#2BA5E5"
+              android:textSize="20sp"
+             android:text="Tutorials">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

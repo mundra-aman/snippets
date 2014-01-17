@@ -176,8 +176,6 @@ ProgressDialog progressDialog;
         		//int a = 0;
         	}
         	
-        	
-    
         }
     
     };
@@ -225,13 +223,13 @@ ProgressDialog progressDialog;
 	            }
         	} catch( Exception e ){
         		//int a = 0;
-        	}
-        	
-        	
+        	}	
     
         }
     
     };
+    
+    // Algorithm efficiency logic
     
     
 }

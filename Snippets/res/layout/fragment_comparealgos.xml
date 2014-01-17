@@ -3,7 +3,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffff" >
+    android:background="#ACB08D" >
 
 <LinearLayout
     android:id="@+id/LinearLayout1"
@@ -79,6 +79,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="#4E1716"
+        android:textColor="#453F22"
         android:text="Switch to Algorithm Source Code" />
 </LinearLayout>
 
