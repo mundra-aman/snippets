@@ -21,13 +21,10 @@
         <item>Compile own code</item>
         <item>Compare Algos</item>
         <item>My codes</item>
-        <item>Git Repos</item>
         <item>Compile Engine</item>
-        <item>Lang tuts+</item>
         <item>Snip Feeds</item>
         <item>Accounts</item>
-        <item>Settings</item>
-    </string-array>
+     </string-array>
 
     <!-- Nav Drawer Menu tags -->
     <string-array name="nav_drawer_tags">
@@ -70,7 +67,7 @@
 
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
-    <string name="title_activity_testact">Testact</string>
+    <string name="title_activity_testact">Code Compile</string>
     <string name="title_activity_test">Test</string>
 
 </resources>

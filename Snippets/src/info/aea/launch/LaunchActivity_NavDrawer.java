@@ -9,12 +9,9 @@ import info.aea.drawer.Fragment_CSharp;
 import info.aea.drawer.Fragment_CompareAlgos;
 import info.aea.drawer.Fragment_CompileEngine;
 import info.aea.drawer.Fragment_CompileOwnCode;
-import info.aea.drawer.Fragment_GitCodes;
 import info.aea.drawer.Fragment_Java;
-import info.aea.drawer.Fragment_LangTuts;
 import info.aea.drawer.Fragment_MyCodes;
 import info.aea.drawer.Fragment_Python;
-import info.aea.drawer.Fragment_Settings;
 import info.aea.drawer.Fragment_home;
 import info.aea.drawer.NavDrawerItem;
 import info.aea.drawer.NavDrawerListAdapter;
@@ -116,6 +113,9 @@ public class LaunchActivity_NavDrawer extends Activity {
 		// empty list
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuTags[7], navMenuIcons.getResourceId(7, -1)));
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], navMenuTags[8], navMenuIcons.getResourceId(8, -1)));
+		//navDrawerItems.add(new NavDrawerItem(navMenuTitles[9], navMenuTags[9], navMenuIcons.getResourceId(9, -1)));
+		
+		// Pages
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[9], navMenuTags[9], navMenuIcons.getResourceId(9, -1)));
 		
 		// Pages
@@ -124,12 +124,9 @@ public class LaunchActivity_NavDrawer extends Activity {
 		// Pages
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[11], navMenuTags[11], navMenuIcons.getResourceId(11, -1)));
 		
-		// Pages
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[12], navMenuTags[12], navMenuIcons.getResourceId(12, -1)));
+		//navDrawerItems.add(new NavDrawerItem(navMenuTitles[12], navMenuTags[12], navMenuIcons.getResourceId(12, -1)));
 		
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[13], navMenuTags[13], navMenuIcons.getResourceId(13, -1)));
-		
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[14], navMenuTags[14], navMenuIcons.getResourceId(14, -1)));
+		//navDrawerItems.add(new NavDrawerItem(navMenuTitles[13], navMenuTags[13], navMenuIcons.getResourceId(13, -1)));
 		
 				
 				
@@ -292,29 +289,20 @@ public class LaunchActivity_NavDrawer extends Activity {
 			break;
 			
 		case 9:
-			fragment = new Fragment_GitCodes();
+			fragment = new Fragment_CompileEngine();
 			break;
 		
 		case 10:
-			fragment = new Fragment_CompileEngine();
-			break;
-		case 11:
-			fragment = new Fragment_LangTuts();
-			break;
-		case 12:
 			
 			Intent i = new Intent(getApplicationContext(), AndroidRSSReaderApplicationActivity.class);
 			startActivity(i);
 			//fragment = new Fragment_SnipFeeds();
 			break;
 			
-		case 13:
+		case 11:
 			fragment = new Fragment_Accounts();
 			break;
 			
-		case 14:
-			fragment = new Fragment_Settings();
-			break;
 		default:
 			break;
 		}
