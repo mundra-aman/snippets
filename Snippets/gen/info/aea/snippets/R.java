@@ -276,7 +276,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int LinearLayout1=0x7f050003;
-        public static final int action_settings=0x7f050057;
+        public static final int action_settings=0x7f050058;
         public static final int algolist1=0x7f050043;
         public static final int algolist2=0x7f050045;
         public static final int btnAddSite=0x7f05004f;
@@ -327,9 +327,9 @@ containing a value of this type.
         public static final int gettime2=0x7f050017;
         public static final int hacker_space=0x7f050047;
         public static final int icon=0x7f05003f;
-        public static final int item1=0x7f050058;
-        public static final int item2=0x7f050059;
-        public static final int item3=0x7f05005a;
+        public static final int item1=0x7f050059;
+        public static final int item2=0x7f05005a;
+        public static final int item3=0x7f05005b;
         public static final int langspinner=0x7f05004a;
         public static final int large=0x7f050002;
         public static final int layoutHeader=0x7f05004d;
@@ -364,6 +364,7 @@ containing a value of this type.
         public static final int tvPat=0x7f050050;
         public static final int txtLabel=0x7f050048;
         public static final int txtUrl=0x7f050023;
+        public static final int webView1=0x7f050057;
         public static final int webpage=0x7f050056;
         public static final int welcome=0x7f05001d;
     }
@@ -415,6 +416,7 @@ containing a value of this type.
         public static final int site_list=0x7f03002c;
         public static final int site_list_row=0x7f03002d;
         public static final int webview=0x7f03002e;
+        public static final int webview_java=0x7f03002f;
     }
     public static final class menu {
         public static final int main_menu=0x7f0b0000;

@@ -38,7 +38,18 @@ public class RSSDatabaseHandler extends SQLiteOpenHelper {
 				+ " INTEGER PRIMARY KEY," + KEY_TITLE + " TEXT," + KEY_LINK
 				+ " TEXT," + KEY_RSS_LINK + " TEXT," + KEY_DESCRIPTION
 				+ " TEXT" + ")";
+		
+		ContentValues cv = new ContentValues();
+
+		System.out.println("inserting default sites");
+		cv.put("title", "site1");
+		cv.put("link", "google.com");
+		cv.put("rss_link", "7 november");
+		cv.put("description", "9AM-10AM ");
+		
 		db.execSQL(CREATE_RSS_TABLE);
+		db.insert("websites", null, cv);
+		
 	}
 
 	// Upgrading database
