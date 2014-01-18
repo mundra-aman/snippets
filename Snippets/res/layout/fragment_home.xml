@@ -1,133 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="3" >
 
-<TableLayout 
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:shrinkColumns="*"
-    android:stretchColumns="*"
-    android:layout_weight="2.8"
-    android:weightSum="8" >
-
-    <TableRow
-        android:layout_width="0dp"
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#C7D147" >
-	
-        <TextView 
-            android:id="@+id/hacker_space"
-            android:gravity="center"
-            android:layout_span="3"
-      	    android:layout_width="match_parent"
-        	android:layout_height="match_parent"
-            android:textColor="#ffffffff"
-            android:text="Java"
-            android:clickable="true"
-            android:textSize="20sp"/>       
-       
-    </TableRow>
+        android:layout_weight="2.8"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:weightSum="8" >
 
-    <TableRow
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="2.5"
-        android:background="#FF6820" >
-		
-		<TextView 
-            android:gravity="center"
-            android:layout_span="3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textColor="#202D44"
-            android:text="c++"
-            android:textSize="20sp" /> 
-       
-        
-    </TableRow>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#C7D147" >
 
-    <TableRow
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1" 
-        android:background="#0C273D">
+            <TextView
+                android:id="@+id/java"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="3"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Java"
+                android:textColor="#ffffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
 
-       <TextView 
-            android:gravity="center"
-            android:layout_span="3"
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-            android:textColor="#ffffffff"
-            android:text="C"
-            android:textSize="20sp"/> 
-        
-    </TableRow>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="#FF6820" >
 
-    <TableRow
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="2.5" 
-        android:background="#D7DADB" >
-<TextView 
-            android:gravity="center"
-            android:layout_span="3"
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-            android:textColor="#202D44"
-            android:text="C# .net"
-            android:textSize="20sp"/> 
-       
-    </TableRow>
-<TableRow
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1" 
-        android:background="#FFE11A">
+            <TextView
+                android:id="@+id/cpp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="3"
+                android:gravity="center"
+                android:text="c++"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
 
-       <TextView 
-            android:gravity="center"
-            android:layout_span="3"
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-            android:textColor="#ffffffff"
-            android:text="Python"
-            android:textSize="20sp"/> 
-        
-    </TableRow>
-</TableLayout>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#0C273D" >
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0.30"
-    android:orientation="horizontal"
-    android:weightSum="2" >
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="3"
+                android:gravity="center"
+                android:text="C"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:background="#D7DADB" >
+
+            <TextView
+                android:id="@+id/csharp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="3"
+                android:gravity="center"
+                android:text="C# .net"
+                android:textColor="#202D44"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFE11A" >
+
+            <TextView
+                android:id="@+id/python"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="3"
+                android:gravity="center"
+                android:text="Python"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30"
+        android:orientation="horizontal"
+        android:weightSum="2" >
 
         <TextView
-            android:layout_height="fill_parent"
+            android:id="@+id/help"
             android:layout_width="0dp"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
-             android:textColor="#ffffffff"
+            android:background="#8E001C"
             android:gravity="center"
-             android:background="#8E001C"
-              android:textSize="20sp"
-            android:text="Need Help">
+            android:text="Need Help"
+            android:textColor="#ffffffff"
+            android:textSize="20sp" >
         </TextView>
-         
-         <TextView
-            android:layout_height="fill_parent"
+
+        <TextView
+            android:id="@+id/website"
             android:layout_width="0dp"
+            android:layout_height="fill_parent"
             android:layout_weight="1"
-             android:textColor="#ffffffff"
+            android:background="#2BA5E5"
             android:gravity="center"
-             android:background="#2BA5E5"
-              android:textSize="20sp"
-             android:text="Tutorials">
+            android:text="Website"
+            android:textColor="#ffffffff"
+            android:textSize="20sp" >
         </TextView>
     </LinearLayout>
+
 </LinearLayout>

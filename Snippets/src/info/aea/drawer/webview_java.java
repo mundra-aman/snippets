@@ -10,20 +10,20 @@ import android.webkit.WebSettings.RenderPriority;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class java_webview extends Fragment {
+public class webview_java extends Fragment {
 	
 	 private static final String WebSettings = null;
 	 private WebView webView;
 	 private Bundle webViewBundle;
 	 
-	public java_webview(){}
+	public webview_java(){}
 	
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
 		
 		
-        View rootView = inflater.inflate(R.layout.webview_java, container, false);
+        View rootView = inflater.inflate(R.layout.webview_home, container, false);
         
         webView = (WebView) rootView.findViewById(R.id.webView1);
 		webView.setWebViewClient(new WebViewClient());
@@ -37,8 +37,6 @@ public class java_webview extends Fragment {
         webView.getSettings().setDomStorageEnabled(true);
         webView.getSettings().setRenderPriority(RenderPriority.HIGH);
        
-       
-	        
       
     
          if (webViewBundle == null) {
@@ -50,24 +48,15 @@ public class java_webview extends Fragment {
 		    webView.restoreState(webViewBundle);
 		}
         
- 	        
-
 		return rootView;
 
 	    }
 	    
-		
-		
-	
-
-
 		public boolean shouldOverrideUrlLoading(WebView view, String url) {
 	        view.loadUrl(url);
 	        return true;
 	    }
 	  
-		
-
 	   
 	    public void onPause() {
 		super.onPause();
@@ -76,11 +65,5 @@ public class java_webview extends Fragment {
 		webView.saveState(webViewBundle);
 	    
         }
-	
-	 
-
-        
-        
-      //  return rootView;
-    }
+	}
 

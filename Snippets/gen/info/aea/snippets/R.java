@@ -276,18 +276,19 @@ containing a value of this type.
     }
     public static final class id {
         public static final int LinearLayout1=0x7f050003;
-        public static final int action_settings=0x7f050058;
+        public static final int action_settings=0x7f05005e;
         public static final int algolist1=0x7f050043;
         public static final int algolist2=0x7f050045;
-        public static final int btnAddSite=0x7f05004f;
+        public static final int btnAddSite=0x7f050055;
         public static final int btnCancel=0x7f050025;
         public static final int btnExecute=0x7f05000d;
         public static final int btnSubmit=0x7f050024;
         public static final int button1=0x7f05001e;
-        public static final int button2=0x7f05004b;
+        public static final int button2=0x7f050051;
         public static final int button2git=0x7f050040;
-        public static final int button3=0x7f05004c;
-        public static final int buttontest=0x7f050049;
+        public static final int button3=0x7f050052;
+        public static final int buttontest=0x7f05004f;
+        public static final int c=0x7f050049;
         public static final int checkedTextView2=0x7f050006;
         public static final int checkedTextView3=0x7f050007;
         public static final int checkedTextView4=0x7f05000a;
@@ -315,6 +316,8 @@ containing a value of this type.
         public static final int comresult=0x7f05000e;
         public static final int comresult2=0x7f05000f;
         public static final int counter=0x7f05003e;
+        public static final int cpp=0x7f050048;
+        public static final int csharp=0x7f05004a;
         public static final int drawer_layout=0x7f05001f;
         public static final int edittextInput=0x7f05000b;
         public static final int edittextInput2=0x7f05000c;
@@ -325,28 +328,30 @@ containing a value of this type.
         public static final int getmem2=0x7f05001a;
         public static final int gettime=0x7f050016;
         public static final int gettime2=0x7f050017;
-        public static final int hacker_space=0x7f050047;
+        public static final int help=0x7f05004c;
         public static final int icon=0x7f05003f;
-        public static final int item1=0x7f050059;
-        public static final int item2=0x7f05005a;
-        public static final int item3=0x7f05005b;
-        public static final int langspinner=0x7f05004a;
+        public static final int item1=0x7f05005f;
+        public static final int item2=0x7f050060;
+        public static final int item3=0x7f050061;
+        public static final int java=0x7f050047;
+        public static final int langspinner=0x7f050050;
         public static final int large=0x7f050002;
-        public static final int layoutHeader=0x7f05004d;
+        public static final int layoutHeader=0x7f050053;
         public static final int lblMessage=0x7f050026;
         public static final int lblUrl=0x7f050022;
-        public static final int link=0x7f050053;
-        public static final int list=0x7f050054;
+        public static final int link=0x7f050059;
+        public static final int list=0x7f05005a;
         public static final int listView1=0x7f050041;
         public static final int list_slidermenu=0x7f050021;
-        public static final int logo=0x7f05004e;
+        public static final int logo=0x7f050054;
         public static final int normal=0x7f050001;
-        public static final int page_url=0x7f050051;
+        public static final int page_url=0x7f050057;
         public static final int picker_subtitle=0x7f050036;
-        public static final int pub_date=0x7f050052;
+        public static final int pub_date=0x7f050058;
+        public static final int python=0x7f05004b;
         public static final int small=0x7f050000;
         public static final int spinnerLanguage=0x7f050005;
-        public static final int sqlite_id=0x7f050055;
+        public static final int sqlite_id=0x7f05005b;
         public static final int tag=0x7f05003c;
         public static final int textOutput=0x7f050013;
         public static final int textOutput2=0x7f050014;
@@ -361,11 +366,12 @@ containing a value of this type.
         public static final int title=0x7f05003d;
         public static final int title1=0x7f050042;
         public static final int title2=0x7f050044;
-        public static final int tvPat=0x7f050050;
-        public static final int txtLabel=0x7f050048;
+        public static final int tvPat=0x7f050056;
+        public static final int txtLabel=0x7f05004e;
         public static final int txtUrl=0x7f050023;
-        public static final int webView1=0x7f050057;
-        public static final int webpage=0x7f050056;
+        public static final int webView1=0x7f05005d;
+        public static final int webpage=0x7f05005c;
+        public static final int website=0x7f05004d;
         public static final int welcome=0x7f05001d;
     }
     public static final class layout {
@@ -416,7 +422,7 @@ containing a value of this type.
         public static final int site_list=0x7f03002c;
         public static final int site_list_row=0x7f03002d;
         public static final int webview=0x7f03002e;
-        public static final int webview_java=0x7f03002f;
+        public static final int webview_home=0x7f03002f;
     }
     public static final class menu {
         public static final int main_menu=0x7f0b0000;
@@ -454,13 +460,16 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f08000a;
         /**  Content Description 
          */
-        public static final int desc_list_item_icon=0x7f080022;
+        public static final int desc_list_item_icon=0x7f080025;
         public static final int drawer_close=0x7f08001f;
         public static final int drawer_open=0x7f08001e;
         public static final int hello_world=0x7f08001d;
-        public static final int ideone=0x7f080021;
-        public static final int title_activity_test=0x7f080024;
-        public static final int title_activity_testact=0x7f080023;
+        public static final int ideone1=0x7f080021;
+        public static final int ideone2=0x7f080022;
+        public static final int ideone3=0x7f080023;
+        public static final int ideone4=0x7f080024;
+        public static final int title_activity_test=0x7f080027;
+        public static final int title_activity_testact=0x7f080026;
     }
     public static final class style {
         /** 

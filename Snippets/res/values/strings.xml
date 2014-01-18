@@ -10,11 +10,19 @@
     <string name="drawer_close">Slider Menu Closed</string>
     <string name="app_id">645588418826166</string>
 
-    <string name="ideone">What is Ideone? \n Ideone is an online compiler and debugging tool which allows you
-         to compile source code and execute it online in more than 60 programming languages./>
+    <string name="ideone1">What is Ideone? \n Ideone is an online compiler and debugging tool which allows you
+         to compile source code and execute it online in more than 60 programming languages.
 	</string>
     
+    <string name="ideone2"> How to use Ideone? \n Choose a programming language, 
+        enter the source code with optional input data... and you are ready to go !   
+    </string>
     
+    <string  name="ideone3">  Sphere Engine™ \n We are proud to present our Sphere Engine™ technology, which 
+        allows you to execute programs on a remote server in a secure way within a complete runtime environment. Visit the Sphere Engine™ website to find out more.
+    </string>
+    
+    <string  name ="ideone4"> dsds        </string>
     
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
