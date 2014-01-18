@@ -454,12 +454,13 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f08000a;
         /**  Content Description 
          */
-        public static final int desc_list_item_icon=0x7f080021;
+        public static final int desc_list_item_icon=0x7f080022;
         public static final int drawer_close=0x7f08001f;
         public static final int drawer_open=0x7f08001e;
         public static final int hello_world=0x7f08001d;
-        public static final int title_activity_test=0x7f080023;
-        public static final int title_activity_testact=0x7f080022;
+        public static final int ideone=0x7f080021;
+        public static final int title_activity_test=0x7f080024;
+        public static final int title_activity_testact=0x7f080023;
     }
     public static final class style {
         /** 

@@ -290,12 +290,13 @@ int string com_facebook_requesterror_web_login 0x7f080014
 int string com_facebook_usersettingsfragment_log_in_button 0x7f080008
 int string com_facebook_usersettingsfragment_logged_in 0x7f080009
 int string com_facebook_usersettingsfragment_not_logged_in 0x7f08000a
-int string desc_list_item_icon 0x7f080021
+int string desc_list_item_icon 0x7f080022
 int string drawer_close 0x7f08001f
 int string drawer_open 0x7f08001e
 int string hello_world 0x7f08001d
-int string title_activity_test 0x7f080023
-int string title_activity_testact 0x7f080022
+int string ideone 0x7f080021
+int string title_activity_test 0x7f080024
+int string title_activity_testact 0x7f080023
 int style AppBaseTheme 0x7f090002
 int style AppTheme 0x7f090003
 int style com_facebook_loginview_default_style 0x7f090000

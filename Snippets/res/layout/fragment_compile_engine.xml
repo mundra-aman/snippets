@@ -15,8 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="What is Ideone? \n Ideone is an online compiler and debugging tool which allows you to compile source code and execute it online in more than 60 programming languages." />
-
+        android:text="@string/ideone" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
