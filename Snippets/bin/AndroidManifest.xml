@@ -9,13 +9,13 @@
         android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:launchMode="standard" >
+        android:launchMode="standard"
+        android:theme="@style/AppTheme" >
         <activity android:name="info.aea.launch.SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,25 +23,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
-            android:configChanges="keyboardHidden|orientation"
             android:name="info.aea.rss.AndroidRSSReaderApplicationActivity"
+            android:configChanges="keyboardHidden|orientation"
             android:label="@string/app_name" >
         </activity>
-  
+
         <!-- Add New Site Activity -->
         <activity android:name="info.aea.rss.AddNewSiteActivity" />
-        
+
         <!-- List rss items Activity -->
-        <activity android:name="info.aea.rss.ListRSSItemsActivity" 
-            android:configChanges="keyboardHidden|orientation"/>
-        
-        <!-- Display webpage Activity -->
-        <activity android:name="info.aea.rss.DisPlayWebPageActivity"
-            android:theme="@android:style/Theme.NoTitleBar"
+        <activity
+            android:name="info.aea.rss.ListRSSItemsActivity"
             android:configChanges="keyboardHidden|orientation" />
-        
+
+        <!-- Display webpage Activity -->
+        <activity
+            android:name="info.aea.rss.DisPlayWebPageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name="info.aea.launch.LaunchActivity_NavDrawer"
             android:label="@string/app_name"
@@ -51,7 +51,10 @@
             android:name="info.aea.activities.activity_compiler"
             android:label="@string/title_activity_testact" >
         </activity>
-        
+        <activity
+            android:name="info.aea.activities.activity_compileMyCode"
+            android:label="@string/title_activity_testact" >
+        </activity>
         <activity
             android:name="info.aea.activities.activity_compare"
             android:label="@string/title_activity_testact" >
@@ -61,19 +64,26 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/app_id" />
 
-        <activity android:name="com.facebook.LoginActivity"
+        <activity
+            android:name="com.facebook.LoginActivity"
             android:noHistory="false" >
         </activity>
         <activity
             android:name="info.aea.activities.activity_fblogin"
             android:label="@string/title_activity_test" >
         </activity>
-        
         <activity
             android:name="info.aea.compiler.activities.IdeoneSample"
             android:label="@string/app_name" >
         </activity>
-        
+        <activity
+            android:name="info.aea.activities.Activity_email"
+            android:label="@string/title_activity_activity_email" >
+        </activity>
+        <activity
+            android:name="info.aea.snippets.Activity_About"
+            android:label="@string/title_activity_activity__about" >
+        </activity>
     </application>
 
 </manifest>

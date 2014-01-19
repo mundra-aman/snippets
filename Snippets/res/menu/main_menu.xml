@@ -13,12 +13,8 @@
     
     <item 
         android:id="@+id/item2" 
-        android:title="Meet developers">      
+        android:title="About">      
     </item>
     
-    <item 
-        android:id="@+id/item3" 
-        android:title="Rate this App">
-    </item>
-
+    
 </menu>

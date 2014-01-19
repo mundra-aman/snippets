@@ -1,6 +1,7 @@
 package info.aea.launch;
 
 
+import info.aea.activities.Activity_email;
 import info.aea.database.SnippetsDB_Helper;
 import info.aea.drawer.Fragment_Accounts;
 import info.aea.drawer.Fragment_C;
@@ -16,6 +17,7 @@ import info.aea.drawer.Fragment_home;
 import info.aea.drawer.NavDrawerItem;
 import info.aea.drawer.NavDrawerListAdapter;
 import info.aea.rss.AndroidRSSReaderApplicationActivity;
+import info.aea.snippets.Activity_About;
 import info.aea.snippets.R;
 
 import java.util.ArrayList;
@@ -39,9 +41,6 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class LaunchActivity_NavDrawer extends Activity {
-	
-	
-	
 	
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
@@ -219,17 +218,17 @@ public class LaunchActivity_NavDrawer extends Activity {
 			return true;
 			
 		case R.id.item1:
-			Toast.makeText(getApplicationContext(), "send a suggestion", Toast.LENGTH_LONG).show();
+			//Toast.makeText(getApplicationContext(), "send a suggestion", Toast.LENGTH_LONG).show();
+			Intent i = new Intent(LaunchActivity_NavDrawer.this, Activity_email.class);
+			startActivity(i);
 			return true;
 
 		case R.id.item2:
-			Toast.makeText(getApplicationContext(), "Meet developers", Toast.LENGTH_LONG).show();
+			//Toast.makeText(getApplicationContext(), "About", Toast.LENGTH_LONG).show();
+			Intent i2 = new Intent(LaunchActivity_NavDrawer.this, Activity_About.class);
+			startActivity(i2);
 			return true;
-			
-		case R.id.item3:
-			Toast.makeText(getApplicationContext(), "Rate this app", Toast.LENGTH_LONG).show();
-			return true;
-			
+				
 		default:
 			return super.onOptionsItemSelected(item);
 		}

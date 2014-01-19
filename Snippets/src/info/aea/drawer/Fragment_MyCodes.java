@@ -163,11 +163,17 @@ public class Fragment_MyCodes extends Fragment {
                     }
                 });
  
-                // Setting Netural "Cancel" Button
-                adb.setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                // Setting Netural "Share" Button
+                adb.setPositiveButton("Share", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                     // User pressed Cancel button. Write Logic Here
-                    
+                    	Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+                        sharingIntent.setType("text/plain");
+                        String shareBody = codesource[position];
+                        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Heading");
+                        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+                        startActivity(Intent.createChooser(sharingIntent, "Share via"));
+              
                     }
                 });
 				

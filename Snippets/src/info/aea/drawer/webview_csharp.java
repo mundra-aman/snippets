@@ -41,7 +41,7 @@ public class webview_csharp extends Fragment {
     
          if (webViewBundle == null) {
     	 try{
-		    webView.loadUrl("http://www.google.com");
+		    webView.loadUrl("http://msdn.microsoft.com/en-us/vstudio/hh341490.aspx");
     	 }catch (Exception e){
  			e.printStackTrace();}
 		} else {

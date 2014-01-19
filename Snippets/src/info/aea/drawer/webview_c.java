@@ -41,7 +41,7 @@ public class webview_c extends Fragment {
     
          if (webViewBundle == null) {
     	 try{
-		    webView.loadUrl("http://www.google.com");
+		    webView.loadUrl("http://cm.bell-labs.com/who/dmr/chist.html");
     	 }catch (Exception e){
  			e.printStackTrace();}
 		} else {

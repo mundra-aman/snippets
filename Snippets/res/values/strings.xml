@@ -9,20 +9,71 @@
     <string name="drawer_open">Slider Menu Opened</string>
     <string name="drawer_close">Slider Menu Closed</string>
     <string name="app_id">645588418826166</string>
+    <string name="ideone1">What is Compile Engine? \n Compile Engine is an online compiler and debugging tool which allows you
+         to compile source code and execute it online in more than 60 programming languages.	</string>
+    
+    <string name="ideone2"> How to use Compile Engine? \n Choose a programming language, 
+        enter the source code with optional input data... and you are ready to go !   	</string>
+	
+    <string name="ideone4"> Sample Example \n /* package whatever; // don\'t place package name! */
+		import java.util.*;
+		import java.lang.*;
+		import java.io.*;
 
-    <string name="ideone1">What is Ideone? \n Ideone is an online compiler and debugging tool which allows you
-         to compile source code and execute it online in more than 60 programming languages.
-	</string>
-    
-    <string name="ideone2"> How to use Ideone? \n Choose a programming language, 
-        enter the source code with optional input data... and you are ready to go !   
+		/* Name of the class has to be "Main" only if the class is public. */
+		class Ideone
+			{
+			public static void main (String[] args) throws java.lang.Exception
+			{
+				// your code goes here
+				}
+		} 	</string>
+	
+    <string name="ideone3">
+       Uses of Compile Engine \n
+       The Compile Engineallows you to execute code on a remote server within a complete 
+       and secure runtime environment and to retrieve results of the execution.
+ 	   Works with 60+ programming languages, which we keep up-to-date and which come equipped with both popular and non-standard libraries.
+ 	   Benefits from 10 years of our experience in e-business and e-education, and from the support of nearly a million users belonging 
+ 	   to programming communities powered by our technology.
+ 	   May be used in recruitment, training courses and certification, programming contests, education, and interactive entertainment.
     </string>
+
+        <string name="aboutus">
+         Snippets is an unique and comprehensive environment that caters to all the basic programming needs of the user. 
+         The App is designed by putting the user at its very core and planning an interface around him for efficient interaction. 
+         We have made the application open source and also shared its code on GitHub.  
+         This innovative application is easy to understand and use. Users can compile programs in as much as sixty languages.
+         We have provided generally used programs in few of the languages but users are provided features to write and compile their own code as well.
+         Snippets app is available to download on the Google Play Store as well as on its official website www.android.srocle.com.
+		 Snippets not only allows you to write and compile your own code but you can also compare various algorithms in terms of time-space trade-off.  
+		 Moreover, users can login through Facebook and share their code with their friends as well.   
+        </string>
+        
+        <string name="license">
+           The MIT License (MIT)
+
+Copyright (c) [2014] [Amandeep Singh]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        </string>
     
-    <string  name="ideone3">  Sphere Engine™ \n We are proud to present our Sphere Engine™ technology, which 
-        allows you to execute programs on a remote server in a secure way within a complete runtime environment. Visit the Sphere Engine™ website to find out more.
-    </string>
     
-    <string  name ="ideone4"> dsds        </string>
     
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
@@ -38,7 +89,7 @@
         <item>Compile Engine</item>
         <item>Snip Feeds</item>
         <item>Accounts</item>
-     </string-array>
+    </string-array>
 
     <!-- Nav Drawer Menu tags -->
     <string-array name="nav_drawer_tags">
@@ -58,7 +109,7 @@
         <item>Facebook &amp; Github</item>
         <item></item>
     </string-array>
-    
+
     <!-- Nav Drawer List Item Icons -->
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
@@ -80,5 +131,7 @@
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="title_activity_testact">Code Compile</string>
     <string name="title_activity_test">Test</string>
+    <string name="title_activity_activity_email">Activity_email</string>
+    <string name="title_activity_activity__about">Activity_About</string>
 
 </resources>

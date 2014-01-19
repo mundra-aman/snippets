@@ -131,6 +131,23 @@ public class SnippetsDB_Helper extends SQLiteAssetHelper {
 			}
 			
 			
+			public void insertcode(String Algoid, String AlgoLang, String AlgoSource, String AlgoTitle, String bit){
+				ContentValues newValues = new ContentValues();
+				// Assign values for each row.
+				System.out.println(AlgoSource + AlgoTitle + AlgoLang + Algoid);
+				newValues.put("codeid", Algoid);
+				newValues.put("codelang",AlgoLang);
+				newValues.put("codesource", AlgoSource);
+				newValues.put("codetitle", AlgoTitle);
+				newValues.put("savebit", bit);
+
+				// Insert the row into your table
+				SQLiteDatabase db = getWritableDatabase();
+				db.insert("SourceCodes", null, newValues);
+				System.out.println(AlgoSource + AlgoTitle + AlgoLang + Algoid);
+			}
+			
+			
 			
 			// get all_saved code query
 			public List<SourceCode_Table> get_saved() {

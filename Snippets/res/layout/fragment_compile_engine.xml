@@ -28,14 +28,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/ideone3" />
+            android:text="@string/ideone4" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/ideone4" />
+            android:text="@string/ideone3" />
+        
     </LinearLayout>
 
 </ScrollView>

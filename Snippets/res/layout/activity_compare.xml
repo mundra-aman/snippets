@@ -393,25 +393,7 @@
 
      	</LinearLayout>
      	
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        
-        
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Algorithm 1 is more efficient"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-        
+                
     </LinearLayout>
 
 </ScrollView>

@@ -41,7 +41,7 @@ public class webview_help extends Fragment {
     
          if (webViewBundle == null) {
     	 try{
-		    webView.loadUrl("http://www.google.com");
+		    webView.loadUrl("http://www.dzone.com/links/index.html");
     	 }catch (Exception e){
  			e.printStackTrace();}
 		} else {

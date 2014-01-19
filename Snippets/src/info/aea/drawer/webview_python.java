@@ -41,7 +41,7 @@ public class webview_python extends Fragment {
     
          if (webViewBundle == null) {
     	 try{
-		    webView.loadUrl("http://www.google.com");
+		    webView.loadUrl("http://www.python.org/");
     	 }catch (Exception e){
  			e.printStackTrace();}
 		} else {

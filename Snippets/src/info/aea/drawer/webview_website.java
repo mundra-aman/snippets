@@ -41,7 +41,7 @@ public class webview_website extends Fragment {
     
          if (webViewBundle == null) {
     	 try{
-		    webView.loadUrl("http://www.google.com");
+		    webView.loadUrl("http://android.srocle.com/");
     	 }catch (Exception e){
  			e.printStackTrace();}
 		} else {
