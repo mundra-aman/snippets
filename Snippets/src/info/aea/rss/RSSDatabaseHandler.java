@@ -42,10 +42,10 @@ public class RSSDatabaseHandler extends SQLiteOpenHelper {
 		ContentValues cv = new ContentValues();
 
 		System.out.println("inserting default sites");
-		cv.put("title", "site1");
-		cv.put("link", "google.com");
-		cv.put("rss_link", "7 november");
-		cv.put("description", "9AM-10AM ");
+		cv.put("title", "python");
+		cv.put("link", "http://www.python.org");
+		cv.put("rss_link", "http://www.python.org");
+		cv.put("description", "python sources");
 		
 		db.execSQL(CREATE_RSS_TABLE);
 		db.insert("websites", null, cv);
