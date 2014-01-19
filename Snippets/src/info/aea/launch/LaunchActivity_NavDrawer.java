@@ -1,6 +1,7 @@
 package info.aea.launch;
 
 
+import info.aea.activities.Activity_About;
 import info.aea.activities.Activity_email;
 import info.aea.database.SnippetsDB_Helper;
 import info.aea.drawer.Fragment_Accounts;
@@ -17,7 +18,6 @@ import info.aea.drawer.Fragment_home;
 import info.aea.drawer.NavDrawerItem;
 import info.aea.drawer.NavDrawerListAdapter;
 import info.aea.rss.AndroidRSSReaderApplicationActivity;
-import info.aea.snippets.Activity_About;
 import info.aea.snippets.R;
 
 import java.util.ArrayList;

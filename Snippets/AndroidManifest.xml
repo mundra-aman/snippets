@@ -81,7 +81,7 @@
             android:label="@string/title_activity_activity_email" >
         </activity>
         <activity
-            android:name="info.aea.snippets.Activity_About"
+            android:name="info.aea.activities.Activity_About"
             android:label="@string/title_activity_activity__about" >
         </activity>
     </application>

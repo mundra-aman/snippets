@@ -1,5 +1,8 @@
-package info.aea.snippets;
+package info.aea.activities;
 
+import info.aea.snippets.R;
+import info.aea.snippets.R.layout;
+import info.aea.snippets.R.menu;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
