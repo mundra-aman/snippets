@@ -106,6 +106,7 @@ public class SnippetsDB_Helper extends SQLiteAssetHelper {
 
 						a.setAlgoID(cursor.getString(0));
 						a.setAlgoTitle(cursor.getString(1));
+						//a.setAlgoTitle(cursor.getString(2));
 						
 						Algolist.add(a);
 					} while (cursor.moveToNext());
